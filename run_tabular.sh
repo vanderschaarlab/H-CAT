@@ -24,7 +24,7 @@ seed=0
 model_name="MLP"
 hardness="instance"
 dataset="diabetes"
-fuser -v /dev/nvidia0 -k
+# fuser -v /dev/nvidia0 -k # This can be used to kill processes running on the GPU in case anything is stuck, not enable by default
 python run_experiment_tabular.py --total_runs $total_runs --hardness $hardness --dataset $dataset --model_name $model_name --seed $seed --prop 0.1 --epochs $epochs
 python run_experiment_tabular.py --total_runs $total_runs --hardness $hardness --dataset $dataset --model_name $model_name --seed $seed --prop 0.2 --epochs $epochs
 python run_experiment_tabular.py --total_runs $total_runs --hardness $hardness --dataset $dataset --model_name $model_name --seed $seed --prop 0.3 --epochs $epochs
@@ -32,7 +32,7 @@ python run_experiment_tabular.py --total_runs $total_runs --hardness $hardness -
 python run_experiment_tabular.py --total_runs $total_runs --hardness $hardness --dataset $dataset --model_name $model_name --seed $seed --prop 0.5 --epochs $epochs
 
 dataset="cover"
-fuser -v /dev/nvidia0 -k
+# fuser -v /dev/nvidia0 -k # This can be used to kill processes running on the GPU in case anything is stuck, not enable by default
 python run_experiment_tabular.py --total_runs $total_runs --hardness $hardness --dataset $dataset --model_name $model_name --seed $seed --prop 0.1 --epochs $epochs
 python run_experiment_tabular.py --total_runs $total_runs --hardness $hardness --dataset $dataset --model_name $model_name --seed $seed --prop 0.2 --epochs $epochs
 python run_experiment_tabular.py --total_runs $total_runs --hardness $hardness --dataset $dataset --model_name $model_name --seed $seed --prop 0.3 --epochs $epochs
@@ -42,7 +42,7 @@ python run_experiment_tabular.py --total_runs $total_runs --hardness $hardness -
 
 hardness="atypical"
 dataset="diabetes"
-fuser -v /dev/nvidia0 -k
+# fuser -v /dev/nvidia0 -k # This can be used to kill processes running on the GPU in case anything is stuck, not enable by default
 python run_experiment_tabular.py --total_runs $total_runs --hardness $hardness --dataset $dataset --model_name $model_name --seed $seed --prop 0.1 --epochs $epochs
 python run_experiment_tabular.py --total_runs $total_runs --hardness $hardness --dataset $dataset --model_name $model_name --seed $seed --prop 0.2 --epochs $epochs
 python run_experiment_tabular.py --total_runs $total_runs --hardness $hardness --dataset $dataset --model_name $model_name --seed $seed --prop 0.3 --epochs $epochs
@@ -50,7 +50,7 @@ python run_experiment_tabular.py --total_runs $total_runs --hardness $hardness -
 python run_experiment_tabular.py --total_runs $total_runs --hardness $hardness --dataset $dataset --model_name $model_name --seed $seed --prop 0.5 --epochs $epochs
 
 dataset="cover"
-fuser -v /dev/nvidia0 -k
+# fuser -v /dev/nvidia0 -k # This can be used to kill processes running on the GPU in case anything is stuck, not enable by default
 python run_experiment_tabular.py --total_runs $total_runs --hardness $hardness --dataset $dataset --model_name $model_name --seed $seed --prop 0.1 --epochs $epochs
 python run_experiment_tabular.py --total_runs $total_runs --hardness $hardness --dataset $dataset --model_name $model_name --seed $seed --prop 0.2 --epochs $epochs
 python run_experiment_tabular.py --total_runs $total_runs --hardness $hardness --dataset $dataset --model_name $model_name --seed $seed --prop 0.3 --epochs $epochs

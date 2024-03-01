@@ -10,6 +10,8 @@ import torch.nn as nn
 import torch.optim as optim
 import wandb
 import yaml
+import torchxrayvision as xrv
+import torchvision
 from torchvision import datasets, transforms
 
 from src.dataloader_xray import MultiFormatDataLoader
